@@ -85,10 +85,10 @@ void Gerarmapa(){
                         mapa[i+1][j] = 5;
                     //tem jogador
                     }else if(mapa[i+1][j] == 0){
-                        mapa[i+1][j] = 10;
+                        mapa[i+1][j] = 3;
                     //tem jogador e brisa
                     }else if(mapa[i+1][j] == 9){
-                        mapa[i+1][j] = 11;
+                        mapa[i+1][j] = 5;
                     //tem ouro
                     }else if(mapa[i+1][j] == 7){
                         mapa[i+1][j] = 13;
@@ -103,9 +103,9 @@ void Gerarmapa(){
                     }else if(mapa[i-1][j] == 4){
                         mapa[i-1][j] = 5;
                     }else if(mapa[i-1][j] == 0){
-                        mapa[i-1][j] = 10;
+                        mapa[i-1][j] = 3;
                     }else if(mapa[i-1][j] == 9){
-                        mapa[i-1][j] = 11;
+                        mapa[i-1][j] = 5;
                     }else if(mapa[i-1][j] == 7){
                         mapa[i-1][j] = 13;
                     }else if(mapa[i-1][j] == 12){
@@ -118,9 +118,9 @@ void Gerarmapa(){
                     }else if(mapa[i][j+1] == 4){
                         mapa[i][j+1] = 5;
                     }else if(mapa[i][j+1] == 0){
-                        mapa[i][j+1] = 10;
+                        mapa[i][j+1] = 3;
                     }else if(mapa[i][j+1] == 9){
-                        mapa[i][j+1] = 11;
+                        mapa[i][j+1] = 5;
                     }else if(mapa[i][j+1] == 7){
                         mapa[i][j+1] = 13;
                     }else if(mapa[i][j+1] == 12){
@@ -133,9 +133,9 @@ void Gerarmapa(){
                     }else if(mapa[i][j-1] == 4){
                         mapa[i][j-1] = 5;
                     }else if(mapa[i][j-1] == 0){
-                        mapa[i][j-1] = 10;
+                        mapa[i][j-1] = 3;
                     }else if(mapa[i][j-1] == 9){
-                        mapa[i][j-1] = 11;
+                        mapa[i][j-1] = 5;
                     }else if(mapa[i][j-1] == 7){
                         mapa[i][j-1] = 13;
                     }else if(mapa[i][j-1] == 12){
@@ -150,9 +150,9 @@ void Gerarmapa(){
                     }else if(mapa[i+1][j] == 3){
                         mapa[i+1][j] = 5;
                     }else if(mapa[i+1][j] == 0){
-                        mapa[i+1][j] = 9;
+                        mapa[i+1][j] = 4;
                     }else if(mapa[i+1][j] == 10){
-                        mapa[i+1][j] = 11;
+                        mapa[i+1][j] = 5;
                     }else if(mapa[i+1][j] == 7){
                         mapa[i+1][j] = 12;
                     }else if(mapa[i+1][j] == 13){
@@ -165,9 +165,9 @@ void Gerarmapa(){
                     }else if(mapa[i-1][j] == 3){
                         mapa[i-1][j] = 5;
                     }else if(mapa[i-1][j] == 0){
-                        mapa[i-1][j] = 9;
+                        mapa[i-1][j] = 4;
                     }else if(mapa[i-1][j] == 10){
-                        mapa[i-1][j] = 11;
+                        mapa[i-1][j] = 5;
                     }else if(mapa[i-1][j] == 7){
                         mapa[i-1][j] = 12;
                     }else if(mapa[i-1][j] == 13){
@@ -180,9 +180,9 @@ void Gerarmapa(){
                     }else if(mapa[i][j+1] == 3){
                         mapa[i][j+1] = 5;
                     }else if(mapa[i][j+1] == 0){
-                        mapa[i][j+1] = 9;
+                        mapa[i][j+1] = 4;
                     }else if(mapa[i][j+1] == 10){
-                        mapa[i][j+1] = 11;
+                        mapa[i][j+1] = 5;
                     }else if(mapa[i][j+1] == 7){
                         mapa[i][j+1] = 12;
                     }else if(mapa[i][j+1] == 13){
@@ -195,9 +195,9 @@ void Gerarmapa(){
                     }else if(mapa[i][j-1] == 3){
                         mapa[i][j-1] = 5;
                     }else if(mapa[i][j-1] == 0){
-                        mapa[i][j-1] = 9;
+                        mapa[i][j-1] = 4;
                     }else if(mapa[i][j-1] == 10){
-                        mapa[i][j-1] = 11;
+                        mapa[i][j-1] = 5;
                     }else if(mapa[i][j-1] == 7){
                         mapa[i][j-1] = 12;
                     }else if(mapa[i][j-1] == 13){
@@ -211,32 +211,28 @@ void Gerarmapa(){
     ImprimirMapa();
 
 }
-void andar(int posicaoxJogador,int posicaoyJogador){
-    if(posicaoxJogador + 1 < 4){
-        posicaoxJogador = posicaoxJogador + 1;
-    }
-    else if(posicaoxJogador - 1 >= 0){
-        posicaoxJogador = posicaoxJogador - 1;
-    }
-    if(posicaoyJogador + 1 < 4 ){
-        posicaoyJogador = posicaoyJogador + 1;
-    }
-    if(posicaoyJogador -1 >= 0){
-        posicaoyJogador = posicaoyJogador - 1;
-    }
-}
+
 void finalizar(){
 
 }
 void finalizou(int posicaoxJogador , int posicaoyJogador, int mapa_jogador[tam_mapa][tam_mapa]){
     printf("\n");
     if(mapa_jogador[posicaoxJogador][posicaoyJogador] == 1){
+        ImprimirMapa_jogador(mapa_jogador);
+        printf("\n \n");
+        ImprimirMapa();
         printf("você foi morto pelo Wumpus \n");
         exit(0);
     }else if(mapa_jogador[posicaoxJogador][posicaoyJogador] == 2){
+        ImprimirMapa_jogador(mapa_jogador);
+        printf("\n \n");
+        ImprimirMapa();
         printf("você caiu no poço \n");
         exit(0);
     }else if(mapa_jogador[posicaoxJogador][posicaoyJogador] == 7 || mapa_jogador[posicaoxJogador][posicaoyJogador] == 12 || mapa_jogador[posicaoxJogador][posicaoyJogador] == 13){
+        ImprimirMapa_jogador(mapa_jogador);
+        printf("\n \n");
+        ImprimirMapa();
         printf("você achou o ouro \n");
         exit(0);
     }
@@ -296,6 +292,15 @@ void IA(int mapa_jogador[tam_mapa][tam_mapa],int posicaoxJogador,int posicaoyJog
             }else if(mapa_jogador[posicaoxJogador +1][posicaoyJogador] == 15){
                 printf("entrou aki 15 \n");
                 mapa_jogador[posicaoxJogador + 1][posicaoyJogador] = 1;
+                int i,j;
+                for(i = 0;i<tam_mapa;i++){
+                    for(j=0;j<tam_mapa;j++){
+                        if(mapa_jogador[i][j] == 15){
+                            printf("entrou aki tirar 15");
+                            mapa_jogador[i][j] = -1;
+                        }
+                    }
+                }
             }else if(mapa_jogador[posicaoxJogador +1][posicaoyJogador] == 17){
                 printf("entrou aki 17 \n");
                 mapa_jogador[posicaoxJogador + 1][posicaoyJogador] = 15;
@@ -341,71 +346,121 @@ void IA(int mapa_jogador[tam_mapa][tam_mapa],int posicaoxJogador,int posicaoyJog
             }
         }
     }else if(mapa_jogador[posicaoxJogador][posicaoyJogador] == 5){
-
+        if(posicaoxJogador + 1 < 4){
+            printf("entrou aki x + 1\n"); 
+            if(mapa_jogador[posicaoxJogador +1][posicaoyJogador] == -1){
+                printf("entrou aki -1 \n"); 
+                mapa_jogador[posicaoxJogador + 1][posicaoyJogador] = 17;
+            }
+        }
+        if(posicaoxJogador - 1 >= 0){
+            printf("entrou aki x-1\n"); 
+            if(mapa_jogador[posicaoxJogador  - 1][posicaoyJogador] == -1){
+                printf("entrou aki -1 \n");
+                mapa_jogador[posicaoxJogador - 1][posicaoyJogador] = 17;
+            }
+        }
+        if(posicaoyJogador + 1 < 4 ){
+            printf("entrou aki y+1 \n"); 
+            if(mapa_jogador[posicaoxJogador ][posicaoyJogador + 1] == -1){
+                printf("entrou aki -1 \n");
+                mapa_jogador[posicaoxJogador][posicaoyJogador + 1] = 17;
+            }
+        }
+        if(posicaoyJogador -1 >= 0){
+            printf("entrou aki y-1\n"); 
+            if(mapa_jogador[posicaoxJogador ][posicaoyJogador - 1] == -1){
+                printf("entrou aki -1 \n");
+                mapa_jogador[posicaoxJogador ][posicaoyJogador -1] = 17;
+            }
+        }
     }
     
 }
 void jogar(){
     int mapa_jogador[tam_mapa][tam_mapa];
+    int posicaoxJogadoranterior[100];
+    int posicaoyJogadoranterior[100];
     int posicaoxJogador = 3,posicaoyJogador = 0,acabar = 1;
-    int posicaoxJogadoranterior,posicaoyJogadoranterior;
+    posicaoxJogadoranterior[0] = 3;
+    posicaoyJogadoranterior[0] = 0;
     Zerarmapa_jogador(mapa_jogador);
     mapa_jogador[posicaoxJogador][posicaoyJogador] = mapa[posicaoxJogador][posicaoyJogador];
+    int aux = 0;
     while(acabar != 0){
         finalizou(posicaoxJogador,posicaoyJogador,mapa_jogador);
         IA(mapa_jogador,posicaoxJogador,posicaoyJogador);
-        ImprimirMapa_jogador(mapa_jogador);
-        if(posicaoxJogador + 1 < 4 && mapa_jogador[posicaoxJogador + 1][posicaoyJogador] == -1){
-            posicaoxJogadoranterior = posicaoxJogador;
+       if(posicaoxJogador + 1 < 4 && mapa_jogador[posicaoxJogador + 1][posicaoyJogador] == -1){
+            posicaoxJogadoranterior[aux] = posicaoxJogador;
             posicaoxJogador = posicaoxJogador + 1;
-            mapa_jogador[posicaoxJogadoranterior][posicaoyJogador] = 8;
+            if(mapa_jogador[posicaoxJogadoranterior[aux]][posicaoyJogador] == -1){
+            mapa_jogador[posicaoxJogadoranterior[aux]][posicaoyJogador] = 8;
+            }
             mapa_jogador[posicaoxJogador][posicaoyJogador] = mapa[posicaoxJogador][posicaoyJogador];
+            aux++;
         }else if(posicaoxJogador - 1 >= 0  && mapa_jogador[posicaoxJogador - 1][posicaoyJogador] == -1){
-            posicaoxJogadoranterior = posicaoxJogador;
+            posicaoxJogadoranterior[aux] = posicaoxJogador;
             posicaoxJogador = posicaoxJogador - 1;
-            mapa_jogador[posicaoxJogadoranterior][posicaoyJogador] = 8;
+            if(mapa_jogador[posicaoxJogadoranterior[aux]][posicaoyJogador] == -1){
+            mapa_jogador[posicaoxJogadoranterior[aux]][posicaoyJogador] = 8;
+            }
+            aux++;
             mapa_jogador[posicaoxJogador][posicaoyJogador] = mapa[posicaoxJogador][posicaoyJogador];
         }else if(posicaoyJogador + 1 < 4  && mapa_jogador[posicaoxJogador][posicaoyJogador + 1] == -1){
-            posicaoyJogadoranterior = posicaoyJogador;
+            posicaoyJogadoranterior[aux] = posicaoyJogador;
             posicaoyJogador = posicaoyJogador + 1;
-            mapa_jogador[posicaoxJogador][posicaoyJogadoranterior] = 8;
+            if(mapa_jogador[posicaoxJogador][posicaoyJogadoranterior[aux]] == -1){
+            mapa_jogador[posicaoxJogador][posicaoyJogadoranterior[aux]] = 8;
+            }
+            aux++;
             mapa_jogador[posicaoxJogador][posicaoyJogador] = mapa[posicaoxJogador][posicaoyJogador];
         }else if(posicaoyJogador -1 >= 0  && mapa_jogador[posicaoxJogador + 1][posicaoyJogador - 1] == -1   ){
-            posicaoyJogadoranterior = posicaoyJogador;
+            posicaoyJogadoranterior[aux] = posicaoyJogador;
             posicaoyJogador = posicaoyJogador - 1;
-            mapa_jogador[posicaoxJogador][posicaoyJogadoranterior] = 8;
+            if(mapa_jogador[posicaoxJogador][posicaoyJogadoranterior[aux]] == -1){
+            mapa_jogador[posicaoxJogador][posicaoyJogadoranterior[aux]] = 8;
+            }
+            aux++;
             mapa_jogador[posicaoxJogador][posicaoyJogador] = mapa[posicaoxJogador][posicaoyJogador];
+        }else if(posicaoxJogador = posicaoxJogadoranterior[aux -1 ] && posicaoyJogador == posicaoyJogadoranterior[aux - 1]){
+            posicaoxJogador = posicaoxJogadoranterior[aux - 1];
+            posicaoyJogador = posicaoyJogadoranterior[aux - 1];
+            if(posicaoxJogador + 1 < 4 && mapa_jogador[posicaoxJogador + 1][posicaoyJogador] == -1){
+                posicaoxJogadoranterior[aux] = posicaoxJogador;
+                posicaoxJogador = posicaoxJogador + 1;
+                if(mapa_jogador[posicaoxJogadoranterior[aux]][posicaoyJogador] == -1){
+                    mapa_jogador[posicaoxJogadoranterior[aux]][posicaoyJogador] = 8;
+                }
+                mapa_jogador[posicaoxJogador][posicaoyJogador] = mapa[posicaoxJogador][posicaoyJogador];
+            }else if(posicaoxJogador - 1 >= 0  && mapa_jogador[posicaoxJogador - 1][posicaoyJogador] == -1){
+                posicaoxJogadoranterior[aux] = posicaoxJogador;
+                posicaoxJogador = posicaoxJogador - 1;
+                if(mapa_jogador[posicaoxJogadoranterior[aux]][posicaoyJogador] == -1){
+                    mapa_jogador[posicaoxJogadoranterior[aux]][posicaoyJogador] = 8;
+                }
+                mapa_jogador[posicaoxJogador][posicaoyJogador] = mapa[posicaoxJogador][posicaoyJogador];
+            }else if(posicaoyJogador + 1 < 4  && mapa_jogador[posicaoxJogador][posicaoyJogador + 1] == -1){
+                posicaoyJogadoranterior[aux] = posicaoyJogador;
+                posicaoyJogador = posicaoyJogador + 1;
+                if(mapa_jogador[posicaoxJogador][posicaoyJogadoranterior[aux]] == -1){
+                    mapa_jogador[posicaoxJogador][posicaoyJogadoranterior[aux]] = 8;
+                }
+            mapa_jogador[posicaoxJogador][posicaoyJogador] = mapa[posicaoxJogador][posicaoyJogador];
+            }else if(posicaoyJogador -1 >= 0  && mapa_jogador[posicaoxJogador + 1][posicaoyJogador - 1] == -1   ){
+                posicaoyJogadoranterior[aux] = posicaoyJogador;
+                posicaoyJogador = posicaoyJogador - 1;
+                if(mapa_jogador[posicaoxJogador][posicaoyJogadoranterior[aux]] == -1){
+                    mapa_jogador[posicaoxJogador][posicaoyJogadoranterior[aux]] = 8;
+                }
+                mapa_jogador[posicaoxJogador][posicaoyJogador] = mapa[posicaoxJogador][posicaoyJogador];
+            }
         }
         printf("\n");
         printf ("%i %i \n",posicaoxJogador,posicaoyJogador);
         finalizou(posicaoxJogador,posicaoyJogador,mapa_jogador);
         IA(mapa_jogador,posicaoxJogador,posicaoyJogador);
         ImprimirMapa_jogador(mapa_jogador);
-        if(posicaoxJogador + 1 < 4 && mapa_jogador[posicaoxJogador + 1][posicaoyJogador] == -1){
-            posicaoxJogadoranterior = posicaoxJogador;
-            posicaoxJogador = posicaoxJogador + 1;
-            mapa_jogador[posicaoxJogadoranterior][posicaoyJogador] = 8;
-            mapa_jogador[posicaoxJogador][posicaoyJogador] = mapa[posicaoxJogador][posicaoyJogador];
-        }else if(posicaoxJogador - 1 >= 0  && mapa_jogador[posicaoxJogador - 1][posicaoyJogador] == -1){
-            posicaoxJogadoranterior = posicaoxJogador;
-            posicaoxJogador = posicaoxJogador - 1;
-            mapa_jogador[posicaoxJogadoranterior][posicaoyJogador] = 8;
-            mapa_jogador[posicaoxJogador][posicaoyJogador] = mapa[posicaoxJogador][posicaoyJogador];
-        }else if(posicaoyJogador + 1 < 4  && mapa_jogador[posicaoxJogador][posicaoyJogador + 1] == -1){
-            posicaoyJogadoranterior = posicaoyJogador;
-            posicaoyJogador = posicaoyJogador + 1;
-            mapa_jogador[posicaoxJogador][posicaoyJogadoranterior] = 8;
-            mapa_jogador[posicaoxJogador][posicaoyJogador] = mapa[posicaoxJogador][posicaoyJogador];
-        }else if(posicaoyJogador -1 >= 0  && mapa_jogador[posicaoxJogador + 1][posicaoyJogador - 1] == -1   ){
-            posicaoyJogadoranterior = posicaoyJogador;
-            posicaoyJogador = posicaoyJogador - 1;
-            mapa_jogador[posicaoxJogador][posicaoyJogadoranterior] = 8;
-            mapa_jogador[posicaoxJogador][posicaoyJogador] = mapa[posicaoxJogador][posicaoyJogador];
-        }
-        printf("\n");
-        IA(mapa_jogador,posicaoxJogador,posicaoyJogador);
-        ImprimirMapa_jogador(mapa_jogador);
-        exit(0);
+    
     }
 }
 /*valores :
